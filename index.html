@@ -1,11 +1,246 @@
 <!DOCTYPE html>
-<html>
+<html lang="uk">
   <head>
-    <title>Main</title>
+    <title>Головна</title>
     <meta name="author" content="Marchenko Artem">
     <meta http-equiv="content-type" content="charset = UTF-8">
   </head>
-  <body>
+  <body style="background-color: #01005e; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+    <header style="display: flex; justify-content: center; position: fixed; width: 100%; margin: 0;">
+      <div id="navigation-div"
+        style="background-color: #22267b; width: 30rem; height: 3em;  display: flex; align-items: center; justify-content: space-around;">
+        <nav>
+          <ul style="list-style: none; font-size: 20px; display: inline-block; padding: 0;">
+            <li style="display: inline-block; margin-right: 15px;">
+              <a href="./league.html" style="color: white; text-decoration: none;">Ліга</a>
+            </li>
+            <li style="display: inline-block; margin-right: 15px;">
+              <a href="./club.html" style="color: white; text-decoration: none;">Клуб</a>
+            </li>
+            <li style="display: inline-block; margin-right: 15px;">
+              <a href="./player.html" style="color: white; text-decoration: none;">Гравець</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section id="fixtures" style="display: flex; justify-content: center; padding-top: 75px; ">
+      <div id="fixtures-div"
+        style="display: flex; flex-direction: column; align-items: center; width: 60%; height: 600px; border: 1px solid #01005e; border-radius: 10px; background-color: #28518a; overflow-y: scroll;">
+        <h2
+          style="color: white; border-bottom: 3px solid #01005e; width: 95%; height: 2em; text-align: center; display: block;">
+          Наступні матчі</h2>
+        <div class="fixtures-item" style="display:flex; flex-direction: column; justify-content: center; width: 90%; min-height: 150px; background-color: #17b794; border: solid #17b794; border-radius: 10px; margin-bottom: 15px;">
+          <h3
+            style="border-bottom: 2px solid #01005e; width: 95%; height: 2em; text-align: center; margin-left: auto; margin-right: auto;">
+            <a href="./league.html" style="text-decoration: none; color: white;">Ліга 1</a></h3>
+          <div class="teams" style="display: flex; flex-direction: row;">
+            <div class="team1" style="display: flex; width: 45%; justify-content: center;">
+              <h4 style="margin-left: 20%; text-align: center;"><a href="./club.html" style="text-decoration: none;">Команда 1</a></h4>
+              <h4 id="team1-count" style="width: 10%; margin-left: auto; text-align: center;">0</h4>
+            </div>
+            <div style="display: flex; align-items: center; justify-content: center; width: 10%;">:</div>
+            <div class="team2" style="display: flex; width: 45%; justify-content: center;">
+              <h4 id="team2-count" style="width: 10%; margin-right: auto; text-align: center;">0</h4>
+              <h4 style="margin-right: 20%; text-align: center;"><a href="./club.html" style="text-decoration: none;">Команда 2</a></h4>
+            </div>
+          </div>
+        </div>
+        <div class="fixtures-item" style="display:flex; flex-direction: column; justify-content: center; width: 90%; min-height: 150px; background-color: #17b794; border: solid #17b794; border-radius: 10px;  margin-bottom: 15px;">
+          <h3
+            style=" border-bottom: 2px solid #01005e; width: 95%; height: 2em; text-align: center; margin-left: auto; margin-right: auto;">
+            <a href="./league.html" style="text-decoration: none; color: white;">Ліга 2</a></h3>
+          <div class="teams" style="display: flex; flex-direction: row;">
+            <div class="team1" style="display: flex; width: 45%; justify-content: center;">
+              <h4 style="margin-left: 20%; text-align: center;"><a href="./club.html" style="text-decoration: none;">Команда 1</a></h4>
+              <h4 id="team1-count" style="width: 10%; margin-left: auto; text-align: center;">0</h4>
+            </div>
+            <div style="display: flex; align-items: center; justify-content: center; width: 10%;">:</div>
+            <div class="team2" style="display: flex; width: 45%; justify-content: center;">
+              <h4 id="team2-count" style="width: 10%; margin-right: auto; text-align: center;">0</h4>
+              <h4 style="margin-right: 20%; text-align: center;"><a href="./club.html" style="text-decoration: none;">Команда 2</a></h4>
+            </div>
+          </div>
+        </div>
+        <div class="fixtures-item" style="display:flex; flex-direction: column; justify-content: center; width: 90%; min-height: 150px; background-color: #17b794; border: solid #17b794; border-radius: 10px;  margin-bottom: 15px;">
+          <h3
+            style=" border-bottom: 2px solid #01005e; width: 95%; height: 2em; text-align: center; margin-left: auto; margin-right: auto;">
+            <a href="./league.html" style="text-decoration: none; color: white;">Ліга 3</a></h3>
+          <div class="teams" style="display: flex; flex-direction: row;">
+            <div class="team1" style="display: flex; width: 45%; justify-content: center;">
+              <h4 style="margin-left: 20%; text-align: center;"><a href="./club.html" style="text-decoration: none;">Команда 1</a></h4>
+              <h4 id="team1-count" style="width: 10%; margin-left: auto; text-align: center;">0</h4>
+            </div>
+            <div style="display: flex; align-items: center; justify-content: center; width: 10%;">:</div>
+            <div class="team2" style="display: flex; width: 45%; justify-content: center;">
+              <h4 id="team2-count" style="width: 10%; margin-right: auto; text-align: center;">0</h4>
+              <h4 style="margin-right: 20%; text-align: center;"><a href="./club.html" style="text-decoration: none;">Команда 2</a></h4>
+            </div>
+          </div>
+        </div>
+        <div class="fixtures-item" style="display:flex; flex-direction: column; justify-content: center; width: 90%; min-height: 150px; background-color: #17b794; border: solid #17b794; border-radius: 10px;  margin-bottom: 15px;">
+          <h3
+            style=" border-bottom: 2px solid #01005e; width: 95%; height: 2em; text-align: center; margin-left: auto; margin-right: auto;">
+            <a href="./league.html" style="text-decoration: none; color: white;">Ліга 4</a></h3>
+          <div class="teams" style="display: flex; flex-direction: row;">
+            <div class="team1" style="display: flex; width: 45%; justify-content: center;">
+              <h4 style="margin-left: 20%; text-align: center;"><a href="./club.html" style="text-decoration: none;">Команда 1</a></h4>
+              <h4 id="team1-count" style="width: 10%; margin-left: auto; text-align: center;">0</h4>
+            </div>
+            <div style="display: flex; align-items: center; justify-content: center; width: 10%;">:</div>
+            <div class="team2" style="display: flex; width: 45%; justify-content: center;">
+              <h4 id="team2-count" style="width: 10%; margin-right: auto; text-align: center;">0</h4>
+              <h4 style="margin-right: 20%; text-align: center;"><a href="./club.html" style="text-decoration: none;">Команда 2</a></h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="news" style="margin-top: 25px; display: flex; justify-content: center;">
+      <div id="news-div" style="display: flex; flex-direction: column; align-items: center; width: 60%; height: 600px; border: 1px solid #01005e; border-radius: 10px; background-color: #28518a; overflow-y: scroll;">
+        <h2
+          style="color: white; border-bottom: 3px solid #01005e; width: 95%; height: 2em; text-align: center; display: block;">
+          Футбольні новини</h2>
+        <div class="news-item"
+          style="display:flex; flex-direction: column; width: 90%; min-height: auto; background-color: #17b794; border: solid #17b794; border-radius: 10px;  margin-bottom: 15px; padding-left: 10px;">
+          <h3 style="margin-left: 25px; margin-top: 15px;"> Заголовок новини</h3>
+          <p>In<sup>elementum</sup>, ligula<sub>tincidunt aliquam</sub>, lacus lacus pulvinar diam, at iaculis orci dui vel turpis. Donec molestie
+          laoreet suscipit. Sed purus nisi, aliquet fringilla volutpat quis, eleifend ut magna. Nulla lobortis risus elit, ac
+          congue <font face="Tahoma" size="5" color="purple">velit faucibus et</font>. Donec gravida dapibus volutpat. Donec placerat magna ut mi ultrices faucibus. Etiam sed
+          efficitur tortor. Nullam sagittis molestie feugiat. <a href="#news4" link="red" vlink="blue" alink="pink">4 новина</a></p>
+          <ul >
+            <li>
+              <i><strong>Felis ligula, ultrices tempor</strong> </i> odio sed, facilisis sodales nunc. Vestibulum et odio vel velit eleifend
+              posuere.
+              <ul type="square">
+                <li>
+                  <i><strong>Felis ligula, ultrices tempor</strong> </i> odio sed, facilisis sodales nunc. Vestibulum et odio vel
+                  velit eleifend
+                  posuere.
+                </li>
+                <li>
+                  <i><strong>Lorem ipsum dolor sit amet, consectetur</strong></i> adipiscing elit. Vivamus ullamcorper dignissim quam,
+                  eu maximus ex
+                  elementum non.
+                </li>
+                <li>
+                  <i><strong>Etiam sed dolor lorem. Aliquam erat</strong></i> volutpat. Duis in placerat libero. Donec vehicula
+                  sagittis purus, a
+                  condimentum est faucibus eget.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <i><strong>Lorem ipsum dolor sit amet, consectetur</strong></i> adipiscing elit. Vivamus ullamcorper dignissim quam, eu maximus ex
+              elementum non.
+            </li>
+            <li>
+              <i><strong>Etiam sed dolor lorem. Aliquam erat</strong></i> volutpat. Duis in placerat libero. Donec vehicula sagittis purus, a
+              condimentum est faucibus eget.
+            </li>
+          </ul> 
+          
+          <p>Sed metus nisi, varius sit amet tellus quis, consequat posuere dui. Maecenas facilisis est non ipsum molestie, sit amet
+          blandit ligula congue. Aliquam porttitor felis nisi, ac pellentesque erat tempor eu. Donec eleifend, ligula non sodales
+          vehicula, felis justo ullamcorper est, id venenatis erat odio in est. Vivamus porta ex sed ornare accumsan. Pellentesque
+          eget ante vitae magna laoreet pulvinar ut nec enim. Nulla imperdiet lorem eu tortor condimentum blandit sit amet ut
+          turpis. 
+          <ol type="A">
+            <li>
+              <ol type="a">
+                <li>
+                  <ol type="I">
+                    <li>
+                      Nam felis ligula, ultrices tempor odio sed, facilisis sodales nunc. Vestibulum et odio vel velit eleifend
+                      posuere.
+                    </li>
+                    <li>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ullamcorper dignissim quam, eu maximus ex
+                      elementum non.
+                    </li>
+                    <li>
+                      Etiam sed dolor lorem. Aliquam erat volutpat. Duis in placerat libero. Donec vehicula sagittis purus, a
+                      condimentum est faucibus eget.
+                    </li>
+                  </ol>
+                </li>
+                <li>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ullamcorper dignissim quam, eu maximus ex
+                  elementum non.
+                </li>
+                <li>
+                  Etiam sed dolor lorem. Aliquam erat volutpat. Duis in placerat libero. Donec vehicula sagittis purus, a
+                  condimentum est faucibus eget.
+                </li>
+              </ol>
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ullamcorper dignissim quam, eu maximus ex
+              elementum non.
+            </li>
+            <li>
+              Etiam sed dolor lorem. Aliquam erat volutpat. Duis in placerat libero. Donec vehicula sagittis purus, a
+              condimentum est faucibus eget.
+            </li>
+          </ol> 
+          </p>
+        </div>
+        <div class="news-item"
+          style="display:flex; flex-direction: column; width: 90%; min-height: auto; background-color: #17b794; border: solid #17b794; border-radius: 10px;  margin-bottom: 15px; padding-left: 10px;">
+          <h3 style="margin-left: 25px; margin-top: 15px;"> Заголовок новини 2</h3>
+          <p>In elementum, ligula a tincidunt aliquam, lacus lacus pulvinar diam, at iaculis orci dui vel turpis. Donec molestie
+          laoreet suscipit. Sed purus nisi, aliquet fringilla volutpat quis, eleifend ut magna. Nulla lobortis risus elit, ac
+          congue velit faucibus et. Donec gravida dapibus volutpat. Donec placerat magna ut mi ultrices faucibus. Etiam sed
+          efficitur tortor. Nullam sagittis molestie feugiat.</p>
+          
+          <p>Sed metus nisi, varius sit amet tellus quis, consequat posuere dui. Maecenas facilisis est non ipsum molestie, sit amet
+          blandit ligula congue. Aliquam porttitor felis nisi, ac pellentesque erat tempor eu. Donec eleifend, ligula non sodales
+          vehicula, felis justo ullamcorper est, id venenatis erat odio in est. Vivamus porta ex sed ornare accumsan. Pellentesque
+          eget ante vitae magna laoreet pulvinar ut nec enim. Nulla imperdiet lorem eu tortor condimentum blandit sit amet ut
+          turpis. Nam felis ligula, ultrices tempor odio sed, facilisis sodales nunc. Vestibulum et odio vel velit eleifend
+          posuere. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ullamcorper dignissim quam, eu maximus ex
+          elementum non. Etiam sed dolor lorem. Aliquam erat volutpat. Duis in placerat libero. Donec vehicula sagittis purus, a
+          condimentum est faucibus eget.</p>
+        </div>
+        <div class="news-item"
+          style="display:flex; flex-direction: column; width: 90%; min-height: auto; background-color: #17b794; border: solid #17b794; border-radius: 10px;  margin-bottom: 15px; padding-left: 10px;">
+          <h3 style="margin-left: 25px; margin-top: 15px;"> Заголовок новини 3 </h3>
+          <p>In elementum, ligula a tincidunt aliquam, lacus lacus pulvinar diam, at iaculis orci dui vel turpis. Donec molestie
+          laoreet suscipit. Sed purus nisi, aliquet fringilla volutpat quis, eleifend ut magna. Nulla lobortis risus elit, ac
+          congue velit faucibus et. Donec gravida dapibus volutpat. Donec placerat magna ut mi ultrices faucibus. Etiam sed
+          efficitur tortor. Nullam sagittis molestie feugiat.</p>
+          
+          <p>Sed metus nisi, varius sit amet tellus quis, consequat posuere dui. Maecenas facilisis est non ipsum molestie, sit amet
+          blandit ligula congue. Aliquam porttitor felis nisi, ac pellentesque erat tempor eu. Donec eleifend, ligula non sodales
+          vehicula, felis justo ullamcorper est, id venenatis erat odio in est. Vivamus porta ex sed ornare accumsan. Pellentesque
+          eget ante vitae magna laoreet pulvinar ut nec enim. Nulla imperdiet lorem eu tortor condimentum blandit sit amet ut
+          turpis. Nam felis ligula, ultrices tempor odio sed, facilisis sodales nunc. Vestibulum et odio vel velit eleifend
+          posuere. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ullamcorper dignissim quam, eu maximus ex
+          elementum non. Etiam sed dolor lorem. Aliquam erat volutpat. Duis in placerat libero. Donec vehicula sagittis purus, a
+          condimentum est faucibus eget.</p>
+        </div>
+        <div class="news-item"
+          style="display:flex; flex-direction: column; width: 90%; min-height: auto; background-color: #17b794; border: solid #17b794; border-radius: 10px;  margin-bottom: 15px; padding-left: 10px;">
+          <h3 style="margin-left: 25px; margin-top: 15px;" id="news4"> Заголовок новини 4</h3>
+          <p>In elementum, ligula a tincidunt aliquam, lacus lacus pulvinar diam, at iaculis orci dui vel turpis. Donec molestie
+          laoreet suscipit. Sed purus nisi, aliquet fringilla volutpat quis, eleifend ut magna. Nulla lobortis risus elit, ac
+          congue velit faucibus et. Donec gravida dapibus volutpat. Donec placerat magna ut mi ultrices faucibus. Etiam sed
+          efficitur tortor. Nullam sagittis molestie feugiat.</p>
+          
+          <p>Sed metus nisi, varius sit amet tellus quis, consequat posuere dui. Maecenas facilisis est non ipsum molestie, sit amet
+          blandit ligula congue. Aliquam porttitor felis nisi, ac pellentesque erat tempor eu. Donec eleifend, ligula non sodales
+          vehicula, felis justo ullamcorper est, id venenatis erat odio in est. Vivamus porta ex sed ornare accumsan. Pellentesque
+          eget ante vitae magna laoreet pulvinar ut nec enim. Nulla imperdiet lorem eu tortor condimentum blandit sit amet ut
+          turpis. Nam felis ligula, ultrices tempor odio sed, facilisis sodales nunc. Vestibulum et odio vel velit eleifend
+          posuere. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ullamcorper dignissim quam, eu maximus ex
+          elementum non. Etiam sed dolor lorem. Aliquam erat volutpat. Duis in placerat libero. Donec vehicula sagittis purus, a
+          condimentum est faucibus eget.</p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      
+    </footer>
 
   </body>
 </html>
