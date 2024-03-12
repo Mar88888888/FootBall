@@ -4,190 +4,141 @@
     <title>Club Info</title>
     <meta name="author" content="Marchenko Artem">
     <meta http-equiv="content-type" content="charset = UTF-8">
+    <link rel="stylesheet" href="./style.css">
   </head>
-  <body style="background-color: #01005e; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"  link="white" vlink="lightblue" >
-
-    <header style="display: flex; justify-content: center;">
-      <div id="navigation-div" style="background-color: #22267b; width: 30rem; height: 3em;  display: flex; align-items: center; justify-content: space-around;">
+  <body>
+    <header>
+      <div id="navigation-div">
         <nav>
-          <ul style="list-style: none; font-size: 20px; display: inline-block; padding: 0;">
-            <li style="display: inline-block; margin-right: 15px;">
-              <a href="./index.html" style="color: white; text-decoration: none;">Головна</a>
-            </li>
-            <li style="display: inline-block; margin-right: 15px;">
-              <a href="./league.html" style="color: white; text-decoration: none;">Ліга</a>
-            </li>
-            <li style="display: inline-block; margin-right: 15px;">
-              <a href="./player.html" style="color: white; text-decoration: none;">Гравець</a>
-            </li>
+          <ul>
+            <li><a href="./index.html">Головна</a></li>
+            <li><a href="./league.html">Ліга</a></li>
+            <li><a href="./player.html">Гравець</a></li>
           </ul>
         </nav>
       </div>
     </header>
-    <section id="team-profile" style="margin-top: 25px; display: flex; justify-content: center;">
-      <div id="profile-div"
-        style="display: flex; flex-direction: column; width: 50%; border: 1px solid #01005e; border-radius: 10px; background-color: #28518a;">
-        <h2
-          style="color: white; border-bottom: 3px solid #01005e; width: 100%; height: 2em; text-align: center; display: block;">
-          Футбольний клуб FC</h2>
-        <div width="600px" style="color: white; font-size: 20px;">
-          <a href="./src/logo.jpg" target="_blank"><img src="./src/logo.jpg" height="250px" style="margin-left: 25px;" align="top"></a>
-          <dl style="display: inline-block; margin-left: 20px;">
-            <dt style="padding: 10px;">
-              Керівництво:
-            </dt>
-            <dd style="padding: 10px; border-bottom: 2px solid #01005e;">Президент: Прізвище ім'я</dd>
-            <dd style="padding: 10px; border-bottom: 2px solid #01005e;">Спортивний директор: Прізвище ім'я</dd>
-            <dd style="padding: 10px; border-bottom: 2px solid #01005e;">Технічний директор директор: Прізвище ім'я</dd>
-            <dt style="padding: 10px;">
-              Тренери:
-            </dt>
-            <dd style="padding: 10px; border-bottom: 2px solid #01005e;">Головний тренер: Прізвище ім'я</dd>
-            <dd style="padding: 10px; border-bottom: 2px solid #01005e;">Тренер воротарів: Прізвище ім'я</dd>
-            <dd style="padding: 10px; border-bottom: 2px solid #01005e;">Помічник тренера: Прізвище ім'я</dd>
-            <dd style="padding: 10px; border-bottom: 2px solid #01005e;">Помічник тренера: Прізвище ім'я</dd>
-            <dd style="padding: 10px; border-bottom: 2px solid #01005e;">Помічник тренера: Прізвище ім'я</dd>
-            <dt style="padding: 10px;">
-              Медичний персонал:
-            </dt>
-            <dd style="padding: 10px; border-bottom: 2px solid #01005e;">Фізіотерапевт: Прізвище ім'я</dd>
-            <dd style="padding: 10px; border-bottom: 2px solid #01005e;">Массажист: Прізвище ім'я</dd>
-            <dd style="padding: 10px; border-bottom: 2px solid #01005e;">Массажист: Прізвище ім'я</dd>
+    <section id="team-profile">
+      <div id="profile-div">
+        <h2>Manchester United FC</h2>
+        <div width="600px">
+          <a href="./src/logo.jpg" target="_blank"><img src="./src/logo.jpg" height="250px" align="top"></a>
+          <dl id="managment-list">
+
+            <dt>Керівництво:</dt>
+            <dd>Президент: <span pos="president">Florentino Perio</span></dd>
+            <dd>Спортивний директор: Bikar Palkon</dd>
+            <dd>Технічний директор директор: Andrew Smith</dd>
+            <dt>Тренери:</dt>
+            <dd>Головний тренер: Jack Rodon</dd>
+            <dd>Тренер воротарів: Marselio Rojas</dd>
+            <dd>Помічник тренера: Viktor Tsyganenko</dd>
+            <dd>Помічник тренера: Roberto Carmalio</dd>
+            <dd>Помічник тренера: Aleix Lopez</dd>
+            <dt>Медичний персонал:</dt>
+            <dd>Фізіотерапевт: Jack Lock</dd>
+            <dd>Массажист: Mared Halal</dd>
+            <dd>Массажист: Jamal Musion</dd>
           </dl>
         </div>
-       
       </div>
     </section>
 
-    <section id="fixtures" style="display: flex; justify-content: center; margin-top: 25px; ">
-      <div id="fixtures-div"
-        style="display: flex; flex-direction: column; align-items: center; width: 50%; height: 600px; border: 1px solid #01005e; border-radius: 10px; background-color: #28518a; overflow-y: scroll;">
-        <h2
-          style="color: white; border-bottom: 3px solid #01005e; width: 95%; height: 2em; text-align: center; display: block;">
-          Наступні матчі</h2>
-        <div class="fixtures-item"
-          style="display:flex; flex-direction: column; justify-content: center; width: 90%; min-height: 150px; background-color: #17b794; border: solid #17b794; border-radius: 10px; margin-bottom: 15px;">
-          <h3
-            style="color: white; border-bottom: 2px solid #01005e; width: 95%; height: 2em; text-align: center; margin-left: auto; margin-right: auto;">
-            Ліга 1</h3>
-          <div class="teams" style="display: flex; flex-direction: row;">
-            <div class="team1" style="display: flex; width: 45%; justify-content: center;">
-              <h4 style="margin-left: 20%; text-align: center;">Команда 1</h4>
-              <h4 id="team1-count" style="width: 10%; margin-left: auto; text-align: center;">0</h4>
+    <section id="fixtures">
+      <div id="fixtures-div">
+        <h2>Наступні матчі</h2>
+        <div class="fixtures-item">
+          <h3>Ліга 1</h3>
+          <div class="teams">
+            <div class="team1">
+              <h4>Manchester United FC</h4>
+              <h4 id="team1-count">0</h4>
             </div>
-            <div style="display: flex; align-items: center; justify-content: center; width: 10%;">:</div>
-            <div class="team2" style="display: flex; width: 45%; justify-content: center;">
-              <h4 id="team2-count" style="width: 10%; margin-right: auto; text-align: center;">0</h4>
-              <h4 style="margin-right: 20%; text-align: center;">Команда 2</h4>
+            <div>:</div>
+            <div class="team2">
+              <h4 id="team2-count">0</h4>
+              <h4>Liverpool FC</h4>
             </div>
           </div>
         </div>
-        <div class="fixtures-item"
-          style="display:flex; flex-direction: column; justify-content: center; width: 90%; min-height: 150px; background-color: #17b794; border: solid #17b794; border-radius: 10px;  margin-bottom: 15px;">
-          <h3
-            style="color: white; border-bottom: 2px solid #01005e; width: 95%; height: 2em; text-align: center; margin-left: auto; margin-right: auto;">
-            Ліга 1</h3>
-          <div class="teams" style="display: flex; flex-direction: row;">
-            <div class="team1" style="display: flex; width: 45%; justify-content: center;">
-              <h4 style="margin-left: 20%; text-align: center;">Команда 1</h4>
-              <h4 id="team1-count" style="width: 10%; margin-left: auto; text-align: center;">0</h4>
+        <div class="fixtures-item">
+          <h3>Ліга 1</h3>
+          <div class="teams">
+            <div class="team1">
+              <h4>Real Madrid FC</h4>
+              <h4 id="team1-count">0</h4>
             </div>
-            <div style="display: flex; align-items: center; justify-content: center; width: 10%;">:</div>
-            <div class="team2" style="display: flex; width: 45%; justify-content: center;">
-              <h4 id="team2-count" style="width: 10%; margin-right: auto; text-align: center;">0</h4>
-              <h4 style="margin-right: 20%; text-align: center;">Команда 2</h4>
+            <div>:</div>
+            <div class="team2">
+              <h4 id="team2-count">0</h4>
+              <h4>Manchester United FC</h4>
             </div>
           </div>
         </div>
-        <div class="fixtures-item"
-          style="display:flex; flex-direction: column; justify-content: center; width: 90%; min-height: 150px; background-color: #17b794; border: solid #17b794; border-radius: 10px;  margin-bottom: 15px;">
-          <h3
-            style="color: white; border-bottom: 2px solid #01005e; width: 95%; height: 2em; text-align: center; margin-left: auto; margin-right: auto;">
-            Ліга 1</h3>
-          <div class="teams" style="display: flex; flex-direction: row;">
-            <div class="team1" style="display: flex; width: 45%; justify-content: center;">
-              <h4 style="margin-left: 20%; text-align: center;">Команда 1</h4>
-              <h4 id="team1-count" style="width: 10%; margin-left: auto; text-align: center;">0</h4>
+        <div class="fixtures-item">
+          <h3>Ліга 1</h3>
+          <div class="teams">
+            <div class="team1">
+              <h4>Maribor FC</h4>
+              <h4 id="team1-count">0</h4>
             </div>
-            <div style="display: flex; align-items: center; justify-content: center; width: 10%;">:</div>
-            <div class="team2" style="display: flex; width: 45%; justify-content: center;">
-              <h4 id="team2-count" style="width: 10%; margin-right: auto; text-align: center;">0</h4>
-              <h4 style="margin-right: 20%; text-align: center;">Команда 2</h4>
+            <div>:</div>
+            <div class="team2">
+              <h4 id="team2-count">0</h4>
+              <h4>Manchester United FC</h4>
             </div>
           </div>
         </div>
-        <div class="fixtures-item"
-          style="display:flex; flex-direction: column; justify-content: center; width: 90%; min-height: 150px; background-color: #17b794; border: solid #17b794; border-radius: 10px;  margin-bottom: 15px;">
-          <h3
-            style="color: white; border-bottom: 2px solid #01005e; width: 95%; height: 2em; text-align: center; margin-left: auto; margin-right: auto;">
-            Ліга 1</h3>
-          <div class="teams" style="display: flex; flex-direction: row;">
-            <div class="team1" style="display: flex; width: 45%; justify-content: center;">
-              <h4 style="margin-left: 20%; text-align: center;">Команда 1</h4>
-              <h4 id="team1-count" style="width: 10%; margin-left: auto; text-align: center;">0</h4>
+        <div class="fixtures-item">
+          <h3>Ліга 1</h3>
+          <div class="teams">
+            <div class="team1">
+              <h4>Manchester United FC</h4>
+              <h4 id="team1-count">0</h4>
             </div>
-            <div style="display: flex; align-items: center; justify-content: center; width: 10%;">:</div>
-            <div class="team2" style="display: flex; width: 45%; justify-content: center;">
-              <h4 id="team2-count" style="width: 10%; margin-right: auto; text-align: center;">0</h4>
-              <h4 style="margin-right: 20%; text-align: center;">Команда 2</h4>
+            <div>:</div>
+            <div class="team2">
+              <h4 id="team2-count">0</h4>
+              <h4>Arsenal FC</h4>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="team-squad" style="margin-top: 25px; display: flex; justify-content: center; text-decoration: none;">
-      <div id="squad-div"
-        style="display: flex; flex-direction: column; align-items: center; width: 50%; border: 1px solid #01005e; border-radius: 10px; background-color: #28518a;">
-        <h2
-          style="color: white; border-bottom: 3px solid #01005e; width: 100%; height: 2em; text-align: center; display: block;">
-          Склад команди</h2>
-        <div width="600px" style="color: white; font-size: 20px;">
-          <dl style="display: inline-block; margin-left: 20px; ">
-            <dt style="padding: 10px;">
-              Нападники:
-            </dt>
-            <dd style="padding: 10px; border-bottom: 2px solid #01005e;"><a href="./player.html"
-                style="text-decoration: none;">Прізвище ім'я</a></dd>
-            <dd style="padding: 10px; border-bottom: 2px solid #01005e;"><a href="./player.html"
-                style="text-decoration: none;">Прізвище ім'я</a></dd>
-            <dd style="padding: 10px; border-bottom: 2px solid #01005e;"><a href="./player.html"
-                style="text-decoration: none;">Прізвище ім'я</a></dd>
-            <dt style="padding: 10px;">
-              Півзахисники:
-            </dt>
-            <dd style="padding: 10px; border-bottom: 2px solid #01005e;"><a href="./player.html"
-                style="text-decoration: none;">Прізвище ім'я</a></dd>
-            <dd style="padding: 10px; border-bottom: 2px solid #01005e;"><a href="./player.html"
-                style="text-decoration: none;">Прізвище ім'я</a></dd>
-            <dd style="padding: 10px; border-bottom: 2px solid #01005e;"><a href="./player.html"
-                style="text-decoration: none;">Прізвище ім'я</a></dd>
-            <dd style="padding: 10px; border-bottom: 2px solid #01005e;"><a href="./player.html"
-                style="text-decoration: none;">Прізвище ім'я</a></dd>
-            <dd style="padding: 10px; border-bottom: 2px solid #01005e;"><a href="./player.html"
-                style="text-decoration: none;">Прізвище ім'я</a></dd>
-            <dt style="padding: 10px;">
-              Захисники:
-            </dt>
-            <dd style="padding: 10px; border-bottom: 2px solid #01005e;"><a href="./player.html"
-                style="text-decoration: none;">Прізвище ім'я</a></dd>
-            <dd style="padding: 10px; border-bottom: 2px solid #01005e;"><a href="./player.html"
-                style="text-decoration: none;">Прізвище ім'я</a></dd>
-            <dd style="padding: 10px; border-bottom: 2px solid #01005e;"><a href="./player.html"
-                style="text-decoration: none;">Прізвище ім'я</a></dd>
-            <dt style="padding: 10px;">
-              Воротарі:
-            </dt>
-            <dd style="padding: 10px; border-bottom: 2px solid #01005e;"><a href="./player.html"
-                style="text-decoration: none;">Прізвище ім'я</a></dd>
-            <dd style="padding: 10px; border-bottom: 2px solid #01005e;"><a href="./player.html"
-                style="text-decoration: none;">Прізвище ім'я</a></dd>
+    <section id="team-squad">
+      <div id="squad-div">
+        <h2>Склад команди</h2>
+        <div width="600px">
+          <dl>
+            <ol type="1">
+            <dt>Нападники:</dt>
+            <dd><li><a href="./player.html">Florenco Perio</a></li></dd>
+            <dd><li><a href="./player.html">Critian Perro</a></li></dd>
+            <dd><li><a href="./player.html">Robert Lewand</a></li></dd>
+            <dd><li><a href="./player.html">Roberto Lewandinio</a></li></dd>
+            <dd><li><a href="./player.html">Marcelo Lukasovski</a></li></dd>
+            <dt>Півзахисники:</dt>
+            <dd><li><a href="./player.html">Michael Balcker</a></li></dd>
+            <dd><li><a href="./player.html">Thomas Part</a></li></dd>
+            <dd><li><a href="./player.html">Lionel Clark</a></li></dd>
+            <dd><li><a href="./player.html">Tobby Laderwei</a></li></dd>
+           <dd> <li><a href="./player.html">Mario Baltelio</a></li></dd>
+            <dt>Захисники:</dt>
+           <dd> <li><a href="./player.html">Clarence Seemore</a></li></dd>
+           <dd> <li><a href="./player.html">Tobie Niles</a></li></dd>
+            <dd><li><a href="./player.html">Micah Reechar</a></li></dd>
+            <dd><li><a href="./player.html">Justin Beerar</a></li></dd>
+            <dd><li><a href="./player.html">Linston</a></li></dd>
+            <dd><li><a href="./player.html">Thomas Millner</a></li></dd>
+            <dd><li><a href="./player.html">Romeli Lakamuka</a></li></dd>
+            <dt>Воротарі:</dt>
+            <dd><li><a href="./player.html">Martin Lunio</a></li></dd>
+            <dd><li><a href="./player.html">Tiba Lortoie</a></li></dd>
+            </ol>
           </dl>
         </div>
-
-    
       </div>
     </section>
-
   </body>
 </html>
