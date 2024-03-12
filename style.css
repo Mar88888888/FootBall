@@ -240,7 +240,7 @@ section#news {
   display: block;
 }
 
-#squad-div dl {
+dl {
   display: inline-block;
   margin-left: 20px;
 }
@@ -249,7 +249,6 @@ section#news {
   padding: 10px;
 }
 
-
 #managment-list {
   display: inline-block;
   margin-left: 10%;
@@ -257,6 +256,11 @@ section#news {
 
 #managment-list>dt {
   color: rgb(196, 200, 255);
+}
+
+dd {
+  padding: 10px;
+  border-bottom: 2px solid #01005e;
 }
 
 #managment-list>dd {
@@ -338,15 +342,7 @@ td img {
   margin-right: 25px;
 }
 
-dl {
-  display: inline-block;
-  margin-left: 20px;
-}
 
-dd {
-  padding: 10px;
-  border-bottom: 2px solid #01005e;
-}
 
 span[pos="president"]{
   color: rgb(255, 216, 162);
