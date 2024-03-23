@@ -16,6 +16,7 @@ header {
   position: fixed;
   width: 100%;
   margin: 0;
+  z-index: 10;
 }
 
 section#team-profile {
@@ -26,7 +27,7 @@ section#team-profile {
 
 #navigation-div {
   background-color: #22267b;
-  width: 30rem;
+  width: 100%;
   height: 3em;
   display: flex;
   align-items: center;
@@ -229,6 +230,7 @@ section#news {
   border: 1px solid #01005e;
   border-radius: 10px;
   background-color: #28518a;
+  margin-left: 250px;
 }
 
 #squad-div h2 {
@@ -241,7 +243,7 @@ section#news {
 }
 
 dl {
-  display: inline-block;
+  display: block;
   margin-left: 20px;
 }
 
@@ -363,4 +365,82 @@ ol[type="1"]{
 
 ol > li{
   margin-bottom: 10px;
+}
+
+#player-history, #player-photo, #club-logo, #club-managment{
+  color: #a9a9a9;
+  text-align: center;
+}
+
+#player-history dd{
+  margin: 0;
+}
+
+#managment-list{
+  margin: 0;
+}
+
+dd{
+  margin: 0;
+}
+
+#club-logo img{
+  margin: 0;
+  width: 60%;
+  height: auto;
+}
+
+#advertisment{
+  width: 250px;
+  height: 1400px;
+  background-color: aliceblue;
+  float: left;
+  padding-top: 40px;
+  padding-left: 5px;
+  color: black;
+}
+
+
+#ad-photo {
+  width: 240px;
+}
+
+#ad-photo2 {
+  width: 240px;
+}
+
+nav a:link {
+  color: rgb(255, 255, 255);
+}
+
+nav a:visited {
+  color: rgb(244, 178, 244);
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+nav a:active {
+  color: rgb(255, 99, 99);
+}
+
+
+#advertisment h2:first-child{
+  color: rgb(255, 0, 0);
+}
+
+
+#advertisment::before {
+  content: "Реклама";
+  display: block;
+  background-color: #f0f0f0;
+  padding: 10px;
+}
+
+#advertisment::after {
+  content: "Замовити рекламу: +3800000000; advert.football@gmail.com;  telegram: @football_cent_add";
+  display: block;
+  background-color: #f0f0f0;
+  bottom: 0;
 }
