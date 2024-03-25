@@ -114,6 +114,9 @@
       </div>
     </div>
   </section>
+  <script> 
+    document.write('<a href="https://www.uefa.com/uefachampionsleague/draws/" target="_blank"><h2 style="color:white; text-align:center">Подивитись результати жеребкування 1/4 фіналу ЛЧ</h2></a>'); 
+  </script>
   <section id="news">
     <div id="news-div">
       <h2>Футбольні новини</h2>
@@ -179,10 +182,49 @@
       </div>
     </div>
   </section>
+  <section id="favourites">
+    <h2 id="fav-title">Обране</h2>
+    <div id="favourite-team">
+      Команда:
+    </div>
+    <div id="favourite-player">
+    </div>
+    <div id="favourite-national">
+      Збірна:
+    </div>
+  </section>
   <footer>
-
+    <div id="buttons">
+      <span id="choose-btn" class="btn">Обрати команду</span>
+      <span id="dev-btn" class="btn">Розробник сторінки</span>
+      <span id="comparison-btn" class="btn">Порівняти рядки</span>
+      <span id="redirect-btn" class="btn">Перенаправити</span>
+      <span id="color-btn" class="btn">Змінити колір кнопок</span>
+      <span id="add-news-btn" class="btn">Додати новину</span>
+      <span id="add-player-btn" class="btn">Додати улюбленого гравця</span>
+      <span id="add-national-btn" class="btn">Додати улюблену збірну</span>
+      <span id="add-tournament-btn" class="btn">Додати турнір</span>
+      <span id="change-player-btn" class="btn">Змінити гравця</span>
+      <span id="delete-news-btn" class="btn">Видалити першу новину</span>
+    </div>
   </footer>
 
+  <script src="./script.js"></script>
+  <script>
+    function showDeveloperInfo(name, surname, position = 'Web-dev'){
+      alert(`Розробник сайту: \nІм'я: ${name} \nПрізвище: ${surname} \nПосада: ${position}`);
+    }
+
+    let devBtn = document.getElementById('dev-btn');
+    devBtn.addEventListener('click', () => {
+      showDeveloperInfo('Артем', 'Марченко');
+    });
+
+    let teamChoiceBtn = document.getElementById('choose-btn');
+    teamChoiceBtn.addEventListener('click', () => {
+      userDialogue();
+    });
+  </script>
 </body>
 
 </html>
